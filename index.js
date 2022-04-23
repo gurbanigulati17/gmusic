@@ -3,7 +3,7 @@ const mongoose= require('mongoose');
 
 const app=express();
 
-const port=9000;
+const port=process.env.PORT || 9000;
 const url= "mongodb+srv://gmusic:gmusic@cluster0.6zqwt.mongodb.net/gmusic?retryWrites=true&w=majority";
 
 mongoose.connect(url,{useNewUrlParser: true});
